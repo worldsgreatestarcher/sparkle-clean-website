@@ -1,0 +1,281 @@
+@import url("https://fonts.googleapis.com/css2?family=Satisfy&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #ffffb3;
+  background-image: url(images/starlogo.jpg);
+  background-size: 300px 300px;
+  background-repeat: unset;
+  height: 100%;
+}
+
+.wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  min-width: 900px;
+  max-width: 1700px;
+  min-height: 100%;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: auto;
+}
+
+header {
+  position: relative;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  text-align: center;
+  max-width: 1700px;
+}
+
+.header-grid {
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-columns: 1fr 2fr;
+}
+
+header .logo {
+  background-image: url(/brand/Logo/Web/png/Blacknb80.png);
+  background-repeat: no-repeat;
+  background: #4BB9C5;
+  color: #fff;
+  text-decoration: none;
+  padding: 2em 0;
+}
+
+nav {
+  background: #4BB9C5;
+  text-align: center;
+  text-decoration: none;
+  list-style: none;
+}
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 50px;
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  text-align: right;
+  transition: 0.3s;
+  position: relative;
+  top: 50px;
+}
+nav li {
+  margin: none;
+  padding: 2em 0;
+  text-align: center;
+}
+nav a {
+  color: #fff;
+  text-decoration: none;
+  transition: 0.3s all ease;
+  font-weight: bold;
+  font-size: larger;
+}
+nav a:hover {
+  color: #000;
+  padding: 1em;
+  font-weight: bold;
+  background: #EDEDED;
+}
+
+.padding {
+  padding: 0em;
+  flex: 1;
+}
+
+.container {
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-columns: 1fr 2fr;
+  margin-bottom: 30px;
+  margin-left: 60px;
+  margin-right: 30px;
+}
+
+.main-photo img {
+  height: 575px;
+  width: 775px;
+  margin-right: 10%;
+  bottom: -500px;
+  margin-top: 30px;
+}
+
+.columns {
+  margin-top: 50px;
+}
+
+/*.column-1{
+    padding-top: 100px;
+}
+.column-2,.column-3{
+    padding-top: 70px;
+}*/
+.column-1, .column-2, .column-3 {
+  text-align: center;
+  line-height: 2em;
+}
+.column-1 .col-head, .column-2 .col-head, .column-3 .col-head {
+  color: #009999;
+  font-size: 24px;
+}
+
+hr {
+  border-width: 3px;
+  border-style: inset;
+  margin-left: 3%;
+  margin-right: 3%;
+}
+
+.main-text {
+  padding-top: 40px;
+  text-align: center;
+  line-height: 1.5em;
+  font-size: larger;
+  width: 85%;
+  margin-left: 5%;
+  background-color: #fff;
+}
+
+.footer {
+  position: relative;
+  top: auto;
+  bottom: 0;
+  background-color: #ededed;
+  border-top: 1px solid #e5e5e5;
+  min-height: 75px;
+  max-width: 1700px;
+  width: 100%;
+  flex-shrink: 0;
+  height: 100px;
+  margin-top: auto;
+}
+
+.footer-title {
+  text-align: center;
+  font-size: 20px;
+  line-height: 1.5rem;
+  border-bottom: 1px solid #e0e0e0;
+  color: #777;
+  margin: 0 15% 10px 15%;
+  padding: 10px 0 10px 0;
+}
+
+.footer-copyright {
+  text-align: center;
+  font-size: 0.8rem;
+  line-height: 0.8rem;
+  color: #aaaaaa;
+  padding: 5px 0 10px 0;
+}
+
+.top-head, .top-info {
+  font-size: x-large;
+}
+
+.top-head {
+  color: #009999;
+  font-size: 36px;
+  font-family: "Satisfy", cursive;
+  text-align: center;
+}
+
+.top-info {
+  line-height: 1.5em;
+  text-align: center;
+  font-size: 20px;
+}
+
+.top-text {
+  padding-top: 50px;
+  padding-right: 1em;
+  text-align: center;
+  line-height: 1.5em;
+  font-size: 24px;
+  width: 85%;
+  margin-left: 10%;
+}
+
+.top-subhead {
+  font-size: x-large;
+}
+.top-subhead ul {
+  list-style: none;
+}
+
+.area {
+  text-align: center;
+  line-height: 1.5em;
+  font-size: x-large;
+}
+
+.call {
+  font-size: 20px;
+  text-align: center;
+  background-color: #fff;
+}
+
+.offers {
+  padding-right: 1em;
+  line-height: 1.5em;
+  font-size: 20px;
+  width: 85%;
+  margin-left: 10%;
+}
+
+.star img {
+  background: transparent;
+  width: 200px;
+  margin-left: 300px;
+  opacity: 30%;
+}
+
+.info {
+  font-size: large;
+}
+
+.col-info {
+  font-size: large;
+}
+
+.tag {
+  font-size: 28px;
+  color: #009999;
+  font-family: "Satisfy", cursive;
+  text-align: center;
+}
+
+.col-img img {
+  background: transparent;
+  width: 100px;
+  margin-left: 360px;
+  opacity: 30%;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.center img {
+  margin-left: 0px;
+}
+
+.space {
+  padding-top: 0px;
+}
+
+.footnote {
+  font-size: 15px;
+  line-height: 1.5em;
+  text-align: center;
+}/*# sourceMappingURL=main.css.map */
